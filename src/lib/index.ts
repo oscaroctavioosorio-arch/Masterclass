@@ -9,7 +9,7 @@ export const ROUTE_PATHS = {
  * External registration link for the Masterclass
  * All CTA buttons must point to this URL
  */
-export const REGISTRATION_URL = "https://nicolas-moreno.com/masterclass-codigo-del-futuro/";
+export const REGISTRATION_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdxDz45tWPLuvv06Dr3UQ7ecAk04oRHdQhAuS1dYbftqiHiIw/viewform";
 
 /**
  * Speaker definition for the Hosts section
