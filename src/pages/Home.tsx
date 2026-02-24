@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { TrendingUp, Shield, Zap, ChevronRight, Users, Sparkles, Clock, Globe } from 'lucide-react';
+import { Shield, ChevronRight, Users, Sparkles, Clock, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
@@ -56,7 +56,7 @@ export default function Home() {
             </motion.h1>
 
             <motion.p variants={fadeInUp} className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-              El sistema te impone las reglas; la nueva economía te devuelve el control. Descubre cómo hackear el sistema tradicional, dominar la Web 3.0 y construir un portafolio de riqueza soberana e inconfiscable.
+              Hemos visto al mundo reescribirse, pero el 99% sigue jugando con las reglas del pasado. El sistema tradicional te necesita dependiente; la nueva economía te da el poder de ELEGIR. Descubre cómo apalancarte de la tecnología para tomar el control absoluto de tu futuro.
             </motion.p>
 
             <motion.div variants={fadeInUp}>
@@ -89,8 +89,8 @@ export default function Home() {
           <motion.div initial="hidden" whileInView="visible" viewport={{
           once: true
         }} variants={fadeInUp}>
-            <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight text-black">La Fórmula de la Multiplicación: El Portafolio Perfecto</h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">No dividimos nuestro dinero por activos, lo dividimos por energías. Este es el mapa exacto que usamos:</p>
+            <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight text-black">El Salto Cuántico: Entendiendo el Nuevo Juego</h2>
+            <p className="text-xl text-muted-foreground leading-relaxed">No necesitas ser un experto en tecnología. Necesitas entender hacia dónde va el mundo y tomar la decisión de adelantarte.</p>
           </motion.div>
         </div>
       </section>
@@ -113,8 +113,8 @@ export default function Home() {
           margin: "-100px"
         }} variants={staggerContainer}>
             {/* Card 1: Energía Intensa */}
-            <motion.div variants={fadeInUp}>
-              <Card className="h-full bg-gradient-to-br from-card/60 via-primary/5 to-card/40 border-primary/30 backdrop-blur-sm group hover:border-primary/60 transition-all duration-500 hover:shadow-[0_0_30px_rgba(124,58,237,0.3)] hover:scale-105 relative overflow-hidden">
+            <motion.div variants={fadeInUp} whileHover={{ scale: 1.04 }} transition={{ type: "spring", stiffness: 300, damping: 20 }}>
+              <Card className="h-full bg-gradient-to-br from-card/60 via-primary/5 to-card/40 border-primary/30 backdrop-blur-sm group hover:border-primary/60 transition-all duration-500 hover:shadow-[0_0_30px_rgba(124,58,237,0.3)] relative overflow-hidden">
                 {/* Floating squares inside card */}
                 <div className="absolute top-4 right-4 w-3 h-3 bg-primary/30 rotate-45 animate-pulse" />
                 <div className="absolute bottom-6 left-6 w-2 h-2 bg-primary/40 rotate-45 animate-bounce" style={{
@@ -123,20 +123,21 @@ export default function Home() {
               }} />
                 
                 <CardContent className="p-8 flex flex-col h-full relative z-10">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-[0_0_20px_rgba(124,58,237,0.2)]">
-                    <Zap className="w-8 h-8 text-primary animate-pulse" />
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-cyan-400/10 flex items-center justify-center mb-6 transition-all duration-500 shadow-[0_0_20px_rgba(34,211,238,0.2)]">
+                    <Globe className="w-8 h-8 text-cyan-400 animate-pulse" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4">Energía Intensa <span className="block text-sm font-mono text-primary/80 mt-1">(El Cohete) — 5% a 5,000%</span></h3>
+                  <h3 className="text-2xl font-bold mb-1 text-cyan-400">La Evolución Inevitable</h3>
+                  <span className="block text-xs font-mono text-cyan-400/70 uppercase tracking-widest mb-4">DE LO FÍSICO A LO DIGITAL</span>
                   <p className="text-muted-foreground flex-grow">
-                    Capital de riesgo. Usamos Inteligencia Artificial, bots y arbitraje rápido para detectar oportunidades y capturar ganancias en microsegundos.
+                    Así como la música pasó de los CDs a Spotify, el dinero también evolucionó. Te mostraremos cómo los grandes saltos de la humanidad siempre han consistido en democratizar el poder. Hoy, ese poder está a tu alcance.
                   </p>
                 </CardContent>
               </Card>
             </motion.div>
 
             {/* Card 2: Energía Activa */}
-            <motion.div variants={fadeInUp}>
-              <Card className="h-full bg-gradient-to-br from-card/60 via-accent/5 to-card/40 border-accent/30 backdrop-blur-sm group hover:border-accent/60 transition-all duration-500 hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] hover:scale-105 relative overflow-hidden">
+            <motion.div variants={fadeInUp} whileHover={{ scale: 1.04 }} transition={{ type: "spring", stiffness: 300, damping: 20 }}>
+              <Card className="h-full bg-gradient-to-br from-card/60 via-accent/5 to-card/40 border-accent/30 backdrop-blur-sm group hover:border-accent/60 transition-all duration-500 hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] relative overflow-hidden">
                 {/* Floating squares inside card */}
                 <div className="absolute top-4 right-4 w-3 h-3 bg-accent/30 rotate-45 animate-pulse" style={{
                 animationDelay: '0.5s'
@@ -147,20 +148,21 @@ export default function Home() {
               }} />
                 
                 <CardContent className="p-8 flex flex-col h-full relative z-10">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent/20 to-accent/10 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-[0_0_20px_rgba(59,130,246,0.2)]">
-                    <TrendingUp className="w-8 h-8 text-accent animate-pulse" />
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mb-6 transition-all duration-500 shadow-[0_0_20px_rgba(124,58,237,0.2)]">
+                    <Shield className="w-8 h-8 text-primary animate-pulse" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4">Energía Activa <span className="block text-sm font-mono text-accent/80 mt-1">(El Motor) — Flujo de Caja</span></h3>
+                  <h3 className="text-2xl font-bold mb-1 text-primary">El Poder de Elegir</h3>
+                  <span className="block text-xs font-mono text-primary/70 uppercase tracking-widest mb-4">CENTRALIZADO VS. DESCENTRALIZADO</span>
                   <p className="text-muted-foreground flex-grow">
-                    Nuestro salario de la blockchain. Generamos ingresos pasivos diarios a través del Yield Farming, cobrando comisiones automáticas por dar liquidez a la red.
+                    En el sistema tradicional, el banco es el dueño de tu dinero y tus decisiones. En la Web 3.0, eliminamos al intermediario. Aprenderás por qué ser "descentralizado" significa ser inconfiscable, libre y soberano.
                   </p>
                 </CardContent>
               </Card>
             </motion.div>
 
             {/* Card 3: Energía Calma */}
-            <motion.div variants={fadeInUp}>
-              <Card className="h-full bg-gradient-to-br from-card/60 via-pink-500/5 to-card/40 border-pink-400/30 backdrop-blur-sm group hover:border-pink-400/60 transition-all duration-500 hover:shadow-[0_0_30px_rgba(236,72,153,0.3)] hover:scale-105 relative overflow-hidden">
+            <motion.div variants={fadeInUp} whileHover={{ scale: 1.04 }} transition={{ type: "spring", stiffness: 300, damping: 20 }}>
+              <Card className="h-full bg-gradient-to-br from-card/60 via-pink-500/5 to-card/40 border-pink-400/30 backdrop-blur-sm group hover:border-pink-400/60 transition-all duration-500 hover:shadow-[0_0_30px_rgba(236,72,153,0.3)] relative overflow-hidden">
                 {/* Floating squares inside card */}
                 <div className="absolute top-4 right-4 w-3 h-3 bg-pink-400/30 rotate-45 animate-pulse" style={{
                 animationDelay: '1s'
@@ -171,12 +173,13 @@ export default function Home() {
               }} />
 
                 <CardContent className="p-8 flex flex-col h-full relative z-10">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-pink-500/20 to-pink-400/10 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-[0_0_20px_rgba(236,72,153,0.3)]">
-                    <Shield className="w-8 h-8 text-pink-400 animate-pulse" />
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-pink-500/20 to-pink-400/10 flex items-center justify-center mb-6 transition-all duration-500 shadow-[0_0_20px_rgba(236,72,153,0.3)]">
+                    <Users className="w-8 h-8 text-pink-400 animate-pulse" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4">Energía Calma <span className="block text-sm font-mono text-pink-400 mt-1">(El Refugio) — La base del imperio</span></h3>
+                  <h3 className="text-2xl font-bold mb-1 text-pink-400">Apalancamiento Tecnológico</h3>
+                  <span className="block text-xs font-mono text-pink-400/70 uppercase tracking-widest mb-4">TÚ ERES EL VERDADERO NEGOCIO</span>
                   <p className="text-muted-foreground flex-grow">
-                    Riqueza inquebrantable a largo plazo. Aquí tokenizamos Activos Reales (RWA) y Oro Digital para blindar el patrimonio fuera del sistema bancario y protegerlo de la inflación.
+                    Los vehículos financieros son solo la herramienta; el imperio eres tú. Aprende a utilizar estas tecnologías a tu favor para ganar tiempo, mientras expandes tu marca personal y construyes un ecosistema imparable.
                   </p>
                 </CardContent>
               </Card>
@@ -196,11 +199,11 @@ export default function Home() {
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/10 via-transparent to-accent/10 pointer-events-none" />
 
               <h2 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight text-center text-accent">
-                ESTO NO ES UNA CLASE TEÓRICA.<br className="hidden md:block" /> ES TU PLAN DE ESCAPE.
+                ESTO NO ES UNA CLASE TEÓRICA.<br className="hidden md:block" /> ES TU DESPERTAR.
               </h2>
 
               <p className="text-lg text-muted-foreground mb-8 text-center max-w-2xl mx-auto leading-relaxed">
-                Te mostraremos el "detrás de escena" de cómo los grandes capitales se están moviendo a la Web 3.0 mientras el 99% del mundo sigue distraído. En esta Masterclass revelaremos:
+                Te mostraremos el "detrás de escena" de cómo los visionarios se están apalancando de la Web 3.0 mientras el resto del mundo sigue distraído. En esta Masterclass revelaremos:
               </p>
 
               <ul className="space-y-5 mb-10">
@@ -208,19 +211,19 @@ export default function Home() {
                   <span className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-cyan-400 to-primary flex items-center justify-center shadow-[0_0_10px_rgba(34,211,238,0.5)]">
                     <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                   </span>
-                  <p className="text-foreground/90 leading-relaxed"><span className="font-bold text-black">El fin del monopolio bancario:</span> Cómo crear un búnker de seguridad inconfiscable para tu dinero (Cold Wallets).</p>
+                  <p className="text-foreground/90 leading-relaxed"><span className="font-bold text-black">Hackeando el Sistema:</span> Por qué depender de una sola fuente de ingresos o del sistema bancario es el mayor riesgo que puedes correr hoy.</p>
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-pink-400 to-primary flex items-center justify-center shadow-[0_0_10px_rgba(236,72,153,0.5)]">
                     <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                   </span>
-                  <p className="text-foreground/90 leading-relaxed"><span className="font-bold text-black">El salto cuántico del Oro:</span> Por qué la tecnología Blockchain está digitalizando los activos más valiosos del planeta.</p>
+                  <p className="text-foreground/90 leading-relaxed"><span className="font-bold text-black">Soberanía Financiera:</span> Cómo usar la tecnología actual como un vehículo seguro para proteger tu patrimonio y el de tu familia.</p>
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-cyan-400 to-accent flex items-center justify-center shadow-[0_0_10px_rgba(34,211,238,0.5)]">
                     <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                   </span>
-                  <p className="text-foreground/90 leading-relaxed"><span className="font-bold text-black">Tú eres el verdadero negocio:</span> Cómo capitalizar esta información para escalar tu marca personal y convertirte en un referente de la nueva economía.</p>
+                  <p className="text-foreground/90 leading-relaxed"><span className="font-bold text-black">Marcas de Alto Impacto:</span> Cómo convertir tu conocimiento y tus resultados en un imán de oportunidades a través de tu Marca Personal.</p>
                 </li>
               </ul>
 
@@ -271,7 +274,7 @@ export default function Home() {
           <motion.div className="text-center mb-20" initial="hidden" whileInView="visible" viewport={{
           once: true
         }} variants={fadeInUp}>
-            <h2 className="text-4xl md:text-6xl font-bold mb-4 text-accent">Conoce a tus anfitriones</h2>
+            <h2 className="text-4xl md:text-6xl font-bold mb-4 text-accent">Conoce a tus Guías</h2>
             <div className="h-1.5 w-24 bg-primary mx-auto rounded-full" />
           </motion.div>
 
@@ -291,9 +294,9 @@ export default function Home() {
                 <img src={IMAGES.NICOLAS_MORENO_2} alt="Nicolás Moreno" className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-3xl grayscale hover:grayscale-0 transition-all duration-700 ease-in-out border-2 border-border/50 group-hover:border-primary/50 relative z-10 shadow-2xl" />
               </div>
               <h3 className="text-3xl font-bold mb-2 tracking-tight">NICOLÁS MORENO</h3>
-              <p className="text-primary font-mono text-sm uppercase tracking-widest mb-4">Experto en Inversiones DeFi y Expansión</p>
+              <p className="text-primary font-mono text-sm uppercase tracking-widest mb-4">Estratega en Inversiones, Tecnología y Expansión de Negocios</p>
               <p className="text-muted-foreground leading-relaxed max-w-lg">
-                Nicolás es experto en apalancarse de ecosistemas web 3.0, utilizando la Blockchain para transformarlos en oportunidades accesibles. Su dominio de las nuevas tecnologías lo convierte en el puente perfecto entre la innovación digital y la riqueza real.
+                Experto en decodificar la evolución tecnológica y ecosistemas complejos para transformarlos en oportunidades accesibles. Nicolás te mostrará exactamente cómo operan los vehículos financieros descentralizados para que puedas tomar el control de tus activos con inteligencia y precisión.
               </p>
             </motion.div>
 
@@ -312,9 +315,9 @@ export default function Home() {
                 <img src={IMAGES.SOFIA_OSORIO_JPG_1} alt="Sofía Osorio" className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-3xl grayscale hover:grayscale-0 transition-all duration-700 ease-in-out border-2 border-border/50 group-hover:border-accent/50 relative z-10 shadow-2xl" />
               </div>
               <h3 className="text-3xl font-bold mb-2 tracking-tight">SOFÍA OSORIO</h3>
-              <p className="text-accent font-mono text-sm uppercase tracking-widest mb-4">Experta en Negocios Digitales y Marcas Personales</p>
+              <p className="text-accent font-mono text-sm uppercase tracking-widest mb-4">Experta en Marcas Personales, Marketing y Negocios Digitales</p>
               <p className="text-muted-foreground leading-relaxed max-w-lg">
-                Especialista en enseñar cómo el dinero y la tecnología pueden trabajar a tu favor. Combina una mentalidad inversionista aguda con estrategias prácticas para construir un ecosistema de riqueza seguro.
+                Especialista en ayudar a emprendedores a monetizar su autenticidad. A través de sólidas alianzas y estrategias con vehículos financieros de nueva generación, Sofía te enseña cómo apalancarte de la tecnología no solo para proteger tu dinero, sino para expandir tu influencia, tu mensaje y construir un negocio digital de alto impacto.
               </p>
             </motion.div>
           </div>
