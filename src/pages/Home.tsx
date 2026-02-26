@@ -47,7 +47,7 @@ export default function Home() {
           <motion.div initial="hidden" animate="visible" variants={staggerContainer}>
             <motion.div variants={fadeInUp}>
               <Badge className="mb-6 px-6 py-2 bg-gradient-to-r from-primary/20 to-accent/20 text-primary border-primary/30 font-mono text-sm tracking-wider uppercase backdrop-blur-sm shadow-[0_0_20px_rgba(124,58,237,0.3)] animate-pulse" variant="outline">
-                🚀 MASTERCLASS GRATUITA - 2 DE MARZO DE 2026
+                🚀 MASTERCLASS GRATUITA - 4 DE MARZO DE 2026
               </Badge>
             </motion.div>
 
@@ -364,7 +364,7 @@ export default function Home() {
             <div className="mb-12 p-6 bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 rounded-2xl border border-primary/20 backdrop-blur-sm">
               <div className="flex items-center justify-center mb-4">
                 <Clock className="w-6 h-6 text-primary mr-2" />
-                <h3 className="text-xl font-bold text-primary">Lunes, 2 de Marzo de 2026</h3>
+                <h3 className="text-xl font-bold text-primary">Miércoles, 4 de Marzo de 2026</h3>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-sm">
                 <div className="flex flex-col items-center p-3 bg-card/50 rounded-lg border border-border/30">
