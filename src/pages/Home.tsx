@@ -294,7 +294,7 @@ export default function Home() {
                 <img src={IMAGES.NICOLAS_MORENO_2} alt="Nicolás Moreno" className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-3xl grayscale hover:grayscale-0 transition-all duration-700 ease-in-out border-2 border-border/50 group-hover:border-primary/50 relative z-10 shadow-2xl" />
               </div>
               <h3 className="text-3xl font-bold mb-2 tracking-tight">NICOLÁS MORENO</h3>
-              <p className="text-primary font-mono text-sm uppercase tracking-widest mb-4">Estratega en Inversiones, Tecnología y Expansión de Negocios</p>
+              <p className="text-primary font-mono text-sm uppercase tracking-widest mb-4">Estratega en finanzas DEFI, tecnología web 3.0 y expansión de negocios</p>
               <p className="text-muted-foreground leading-relaxed max-w-lg">
                 Experto en decodificar la evolución tecnológica y ecosistemas complejos para transformarlos en oportunidades accesibles. Nicolás te mostrará exactamente cómo operan los vehículos financieros descentralizados para que puedas tomar el control de tus activos con inteligencia y precisión.
               </p>
